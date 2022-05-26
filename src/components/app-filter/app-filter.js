@@ -13,8 +13,8 @@ const AppFilter = (props) => {
         return(
             <button type="button"
                     className={`btn ${clazz}`}
-            key={name}>
-                {label}
+            key={name}
+                onClick={()=> props.onFilterSelect(name)}>
             </button>
         )
     })
